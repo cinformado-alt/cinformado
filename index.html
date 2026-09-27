@@ -54,7 +54,7 @@
             <!-- Texto Principal -->
             <div class="max-w-2xl">
                 <div class="inline-block bg-[#e6f0fa] text-[#003366] px-3 py-1 rounded-full text-xs font-semibold tracking-wide mb-6">
-                    Tecnología respaldada por EMCOTIC S.A.S
+                    Tecnología respaldada por <a href="http://www.emcotic.com" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#002244] transition-colors">EMCOTIC S.A.S</a>
                 </div>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#4A4A4A] leading-tight">
                     Paz mental clínica.<br>
@@ -168,7 +168,7 @@
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                     </div>
                     <h3 class="text-lg font-bold mb-2 text-[#4A4A4A]">Módulo de Agenda</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">Gestión centralizada para citas presenciales y virtual. Visualiza tu disponibilidad sin riesgo de choques horarios.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">Gestión centralizada para citas presenciales y virtuales. Visualiza tu disponibilidad sin riesgo de choques horarios.</p>
                 </div>
 
                 <!-- 5. Pagos -->
@@ -193,15 +193,34 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
-            <div>
-                <span class="font-bold text-xl tracking-tight">CInformado</span>
-                <p class="text-gray-400 text-sm mt-1">Ecosistema Clínico Seguro.</p>
+    <!-- Banner Clientes (Social Proof) -->
+    <section id="clientes" class="bg-gray-50 py-16 border-t border-gray-200">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-[#003366] mb-4">Colegas y clínicas que ya blindaron su práctica</h2>
+            <p class="text-gray-500 mb-10 max-w-2xl mx-auto">Únete a la red de profesionales que han transformado su gestión clínica y asegurado su tranquilidad legal con CInformado.</p>
+            
+            <div class="relative w-full max-w-4xl mx-auto h-48 md:h-64 flex items-center justify-center bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                <div class="absolute inset-0 flex items-center justify-center bg-gray-50 -z-10">
+                    <svg class="w-8 h-8 text-gray-200 animate-spin" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                </div>
+                <!-- ID modificado para el script de JS -->
+                <img id="clientes-carousel" src="clientes/cliente01.png" alt="Cliente CInformado" class="w-full h-full object-contain p-4 md:p-8 transition-opacity duration-700 ease-in-out opacity-100 block">
             </div>
-            <div class="text-gray-500 text-sm">
-                <p>&copy; 2026 EMCOTIC S.A.S. Todos los derechos reservados.</p>
+        </div>
+    </section>
+
+    <!-- Footer (Ajustado y Minimalista) -->
+    <footer class="bg-gray-900 text-white py-6 border-t border-gray-800">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-2">
+            <div>
+                <span class="font-bold text-lg tracking-tight">CInformado</span>
+                <p class="text-gray-400 text-xs mt-1">Ecosistema Clínico Seguro.</p>
+            </div>
+            <div class="text-gray-500 text-xs">
+                <p>&copy; 2026 <a href="http://www.emcotic.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors underline">EMCOTIC S.A.S</a>. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
@@ -265,7 +284,7 @@
     <!-- BANNER DE COOKIES -->
     <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-gray-900 text-white p-4 md:p-6 shadow-[0_-10px_30px_rgba(0,0,0,0.2)] z-50 transform translate-y-full transition-transform duration-500 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div class="text-sm text-gray-300">
-            <p><strong>Aviso de Privacidad (Ley 1581 de 2012):</strong> Utilizamos cookies estrictamente necesarias para el funcionamiento del sitio. Al navegar, aceptas nuestras <a href="http://www.emcotic.com/politicadatos.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition-colors text-blue-300">políticas de tratamiento de datos personales</a> operadas por EMCOTIC S.A.S.</p>
+            <p><strong>Aviso de Privacidad (Ley 1581 de 2012):</strong> Utilizamos cookies estrictamente necesarias para el funcionamiento del sitio. Al navegar, aceptas nuestras <a href="http://www.emcotic.com/politicadatos.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition-colors text-blue-300">políticas de tratamiento de datos personales</a> operadas por <a href="http://www.emcotic.com" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition-colors">EMCOTIC S.A.S</a>.</p>
         </div>
         <div class="flex gap-3 shrink-0 w-full sm:w-auto">
             <button onclick="acceptCookies()" class="bg-[#003366] text-white px-6 py-2 rounded-lg font-bold text-sm w-full sm:w-auto hover:bg-[#002244] transition-colors border border-blue-400/30">
@@ -276,40 +295,71 @@
 
     <!-- SCRIPTS LÓGICOS -->
     <script>
-        // Lógica del Carrusel
         document.addEventListener('DOMContentLoaded', () => {
-            const images = [
+            
+            // --- 1. Lógica del Carrusel Dashboard ---
+            const dashImages = [
                 'dashboard/dash01.png', 'dashboard/dash02.png', 'dashboard/dash03.png',
                 'dashboard/dash04.png', 'dashboard/dash05.png', 'dashboard/dash06.png',
                 'dashboard/dash07.png', 'dashboard/dash08.png', 'dashboard/dash09.png',
                 'dashboard/dash10.png'
             ];
-            const imgElement = document.getElementById('dashboard-carousel');
-            let currentIndex = 0;
+            const dashElement = document.getElementById('dashboard-carousel');
+            let dashIndex = 0;
 
-            if(imgElement && images.length > 1) {
-                const preloadNextImage = () => {
-                    const nextIndex = (currentIndex + 1) % images.length;
+            if(dashElement && dashImages.length > 1) {
+                const preloadDash = () => {
                     const img = new Image();
-                    img.src = images[nextIndex];
+                    img.src = dashImages[(dashIndex + 1) % dashImages.length];
                 };
-                preloadNextImage();
+                preloadDash();
 
                 setInterval(() => {
-                    imgElement.classList.remove('opacity-100');
-                    imgElement.classList.add('opacity-0');
-
+                    dashElement.classList.remove('opacity-100');
+                    dashElement.classList.add('opacity-0');
                     setTimeout(() => {
-                        currentIndex = (currentIndex + 1) % images.length;
-                        imgElement.src = images[currentIndex];
-                        imgElement.classList.remove('opacity-0');
-                        imgElement.classList.add('opacity-100');
-                        preloadNextImage();
+                        dashIndex = (dashIndex + 1) % dashImages.length;
+                        dashElement.src = dashImages[dashIndex];
+                        dashElement.classList.remove('opacity-0');
+                        dashElement.classList.add('opacity-100');
+                        preloadDash();
                     }, 700); 
                 }, 4000);
             }
+
+            // --- 2. Lógica del Carrusel Clientes ---
+            // IMPORTANTE: Aquí debes agregar o quitar los nombres exactos de tus imágenes
+            const clienteImages = [
+                'clientes/cliente01.png', 
+                'clientes/cliente02.png', 
+                'clientes/cliente03.png', 
+                'clientes/cliente04.png', 
+                'clientes/cliente05.png'
+            ];
+            const clienteElement = document.getElementById('clientes-carousel');
+            let clienteIndex = 0;
+
+            if(clienteElement && clienteImages.length > 1) {
+                const preloadCliente = () => {
+                    const img = new Image();
+                    img.src = clienteImages[(clienteIndex + 1) % clienteImages.length];
+                };
+                preloadCliente();
+
+                setInterval(() => {
+                    clienteElement.classList.remove('opacity-100');
+                    clienteElement.classList.add('opacity-0');
+                    setTimeout(() => {
+                        clienteIndex = (clienteIndex + 1) % clienteImages.length;
+                        clienteElement.src = clienteImages[clienteIndex];
+                        clienteElement.classList.remove('opacity-0');
+                        clienteElement.classList.add('opacity-100');
+                        preloadCliente();
+                    }, 700); 
+                }, 3500); // Un poco más rápido que el dashboard (3.5 segundos)
+            }
             
-            // Mostrar Banner de Cookies al iniciar
+            // --- 3. Mostrar Banner de Cookies al iniciar ---
             setTimeout(() => {
                 if(!localStorage.getItem('cinformado_cookies_accepted')) {
                     document.getElementById('cookie-banner').classList.remove('translate-y-full');
@@ -343,3 +393,4 @@
     </script>
 </body>
 </html>
+```eof
