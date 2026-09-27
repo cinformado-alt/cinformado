@@ -3,272 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CInformado | Ecosistema Clínico Seguro para Psicólogos</title>
-    <meta name="description" content="Software clínico para psicólogos. Consentimientos informados criptográficos, expedientes bajo Método HALCÓN y cumplimiento de la Ley 1090 de 2006.">
+    <title>CInformado | Ecosistema Clínico para Psicólogos</title>
+    <meta name="description" content="Software clínico para psicólogos. Consentimientos informados criptográficos y Método HALCÓN.">
+    
+    <!-- Enlace a tu CSS compilado de Vercel -->
+    <link rel="stylesheet" href="/style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/style.css">
 </head>
-<body class="bg-[#F8F7F2] text-gray-800 font-sans antialiased selection:bg-[#003366] selection:text-white">
+<body class="antialiased font-['Poppins'] bg-[#F8F7F2] text-[#4A4A4A]">
 
-    <header class="fixed w-full top-0 bg-[#F8F7F2]/90 backdrop-blur-md z-50 border-b border-gray-200 shadow-sm transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex items-center gap-2">
-                    <!-- Logo Icon -->
-                    <svg class="w-8 h-8 text-[#003366]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    <span class="font-bold text-2xl text-[#003366] tracking-tight">CInformado</span>
-                </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#caracteristicas" class="text-gray-600 hover:text-[#003366] font-medium transition-colors">Funcionalidades</a>
-                    <a href="#metodo" class="text-gray-600 hover:text-[#003366] font-medium transition-colors">Método HALCÓN</a>
-                    <a href="#seguridad" class="text-gray-600 hover:text-[#003366] font-medium transition-colors">Cumplimiento Legal</a>
-                </nav>
-                <div class="hidden md:flex">
-                    <a href="#contacto" class="bg-[#003366] hover:bg-[#004d99] text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Solicitar Demo</a>
-                </div>
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button class="text-gray-600 hover:text-[#003366] focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                    </button>
-                </div>
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <svg class="w-8 h-8 text-[#003366]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+                <span class="font-bold text-2xl text-[#003366] tracking-tight">CInformado</span>
             </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#caracteristicas" class="text-sm font-medium text-gray-600 hover:text-[#003366] transition-colors">Características</a>
+                <a href="#metodo" class="text-sm font-medium text-gray-600 hover:text-[#003366] transition-colors">Método HALCÓN</a>
+            </nav>
+
+            <a href="login.html" class="text-sm font-medium text-gray-600 hover:text-[#003366]">Acceso Psicólogos</a>
         </div>
     </header>
 
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-[#003366] font-medium text-sm mb-6 border border-blue-100">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                        100% Alineado a la Ley 1090 de 2006
-                    </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                        Paz mental clínica.<br>
-                        <span class="text-[#003366]">Seguridad absoluta.</span>
-                    </h1>
-                    <p class="text-lg text-gray-600 mb-8 max-w-xl leading-relaxed">
-                        CInformado no es un simple gestor de citas. Es un ecosistema clínico cerrado que blinda tu práctica psicológica con consentimientos criptográficos y gestiona tus expedientes bajo el rigor del Método HALCÓN.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#contacto" class="bg-[#003366] hover:bg-[#004d99] text-white px-8 py-3.5 rounded-full font-semibold text-center transition-all shadow-md hover:shadow-lg">
-                            Moderniza tu Consultorio
-                        </a>
-                        <a href="#caracteristicas" class="bg-white border-2 border-gray-200 text-gray-700 hover:border-[#003366] hover:text-[#003366] px-8 py-3.5 rounded-full font-semibold text-center transition-all">
-                            Ver Funcionalidades
-                        </a>
-                    </div>
-                    <p class="mt-8 text-sm font-semibold text-gray-500 italic border-l-4 border-[#003366] pl-4">
-                        "Que el cielo sea el límite, no tu mente." <br>
-                        <span class="text-xs font-normal">— Jorge Arango Castaño</span>
-                    </p>
+    <main class="pt-32 pb-20 lg:pt-48 lg:pb-32 container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-[#4A4A4A] leading-tight">
+                    Paz mental clínica.<br>
+                    <span class="text-[#003366]">Seguridad absoluta.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-10 max-w-xl">
+                    No es un simple gestor de citas. Es un ecosistema clínico cerrado que blinda tu práctica psicológica con consentimientos criptográficos y gestiona expedientes bajo el rigor del Método HALCÓN.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contacto" class="bg-[#003366] text-white px-8 py-4 rounded-full font-bold hover:bg-[#002244] transition-all duration-300 shadow-md hover:shadow-lg inline-flex items-center justify-center transform hover:-translate-y-1">
+                        Solicitar Demo
+                    </a>
+                    <a href="#caracteristicas" class="bg-transparent border-2 border-[#003366] text-[#003366] px-8 py-4 rounded-full font-bold hover:bg-[#003366] hover:text-white transition-all duration-300 inline-flex items-center justify-center transform hover:-translate-y-1">
+                        Ver Funcionalidades
+                    </a>
+                </div>
+            </div>
+            
+            <!-- CONTENEDOR DEL CARRUSEL ESTRATÉGICO -->
+            <div class="relative w-full aspect-video md:aspect-[4/3] lg:aspect-video rounded-2xl shadow-2xl border border-gray-100 transform transition-transform duration-500 hover:-translate-y-2 bg-gray-100 overflow-hidden group">
+                <!-- Capa de seguridad visual / Skeleton loading -->
+                <div class="absolute inset-0 flex items-center justify-center bg-gray-100 -z-10">
+                    <svg class="w-12 h-12 text-gray-300 animate-spin" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
                 </div>
                 
-                <div class="relative">
-                    <!-- Decorative background blob -->
-                    <div class="absolute inset-0 bg-[#003366]/5 rounded-full blur-3xl transform scale-110 -z-10"></div>
-                    <img src="https://placehold.co/800x600/003366/FFF?text=Dashboard+CInformado+Mockup" alt="Dashboard CInformado" class="rounded-2xl shadow-2xl border border-gray-100 transform -rotate-1 hover:rotate-0 transition-transform duration-500">
-                    
-                    <!-- Floating Badge -->
-                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border border-gray-100 flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
-                        <div class="bg-green-100 p-2 rounded-full">
-                            <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
-                        <div>
-                            <p class="text-sm font-bold text-gray-800">Firma Verificada</p>
-                            <p class="text-xs text-gray-500">Sello Criptográfico Activo</p>
-                        </div>
-                    </div>
+                <!-- Imagen Dinámica -->
+                <img id="dashboard-carousel" src="dashboard/dash01.png" alt="Interfaz de CInformado" class="w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out opacity-100">
+                
+                <!-- Indicador de software vivo (Badge) -->
+                <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-sm flex items-center gap-2 border border-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="text-xs font-semibold text-gray-700">Entorno Clínico Activo</span>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <section id="caracteristicas" class="py-20 bg-gray-50 border-y border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="caracteristicas" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-[#003366] mb-4">Un Ecosistema Clínico Blindado</h2>
-                <p class="text-gray-600">Herramientas diseñadas por y para profesionales de la salud mental, enfocadas en la ética, la responsabilidad y la rentabilidad residual.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#003366] mb-4">Cumplimiento de la Ley 1090 sin estrés</h2>
+                <p class="text-lg text-gray-600">Herramientas diseñadas por y para profesionales. Protege tu licencia mientras te enfocas en el propósito de tus pacientes.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-                    <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-6 border border-green-100">
-                        <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                <!-- Tarjeta 1: No Repudio -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-50 hover:-translate-y-2 flex flex-col items-center text-center">
+                    <div class="mb-6 bg-emerald-50 p-5 rounded-full">
+                        <svg class="h-10 w-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Consentimientos Blindados</h3>
-                    <p class="text-gray-600 text-sm">Firma digital vía código QR en el celular del paciente. Generación de PDFs con sello criptográfico, Timestamp y principio legal de "No Repudio".</p>
+                    <h3 class="text-xl font-bold mb-3 text-[#4A4A4A]">Principio de No Repudio</h3>
+                    <p class="text-gray-500 text-sm">Firma digital con código QR. Genera PDFs con sello criptográfico, Timestamp y metadatos del navegador del paciente.</p>
                 </div>
 
-                <!-- Feature 2 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 border border-blue-100">
-                        <svg class="w-6 h-6 text-[#003366]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                <!-- Tarjeta 2: HALCÓN -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-50 hover:-translate-y-2 flex flex-col items-center text-center">
+                    <div class="mb-6 bg-blue-50 p-5 rounded-full">
+                        <svg class="h-10 w-10 text-[#003366]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Expediente Dinámico</h3>
-                    <p class="text-gray-600 text-sm">Historia clínica basada en el Método HALCÓN. Estructura el diagnóstico existencial y los proyectos de vida de tus pacientes de forma coherente.</p>
+                    <h3 class="text-xl font-bold mb-3 text-[#4A4A4A]">Expediente HALCÓN</h3>
+                    <p class="text-gray-500 text-sm">Integra historias clínicas bajo la estructura del Método HALCÓN. Evaluación coherente orientada al proyecto de vida.</p>
                 </div>
 
-                <!-- Feature 3 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-                    <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6 border border-red-100">
-                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                <!-- Tarjeta 3: 3 Strikes -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-50 hover:-translate-y-2 flex flex-col items-center text-center">
+                    <div class="mb-6 bg-red-50 p-5 rounded-full">
+                        <svg class="h-10 w-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Regla de los "3 Strikes"</h3>
-                    <p class="text-gray-600 text-sm">Tracker visual de compromiso. Si un paciente falta injustificadamente 3 veces, el sistema facilita un cierre de proceso ético y respaldado.</p>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-                    <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-6 border border-indigo-100">
-                        <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Validación de Evoluciones</h3>
-                    <p class="text-gray-600 text-sm">El paciente aprueba las "tareas" de cada sesión firmando digitalmente. Copias automáticas aseguran el compromiso mutuo.</p>
-                </div>
-
-                <!-- Feature 5 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-                    <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-6 border border-amber-100">
-                        <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Transparencia Financiera</h3>
-                    <p class="text-gray-600 text-sm">Control de pagos integrado. Generación automática de Recibos de Caja en PDF enviados al correo del paciente vía Resend.</p>
-                </div>
-
-                <!-- Feature 6 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-                    <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-6 border border-gray-200">
-                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bóveda de Seguridad</h3>
-                    <p class="text-gray-600 text-sm">Backups obligatorios semanales protegidos por un PIN maestro. Tu información clínica y la de tus pacientes, 100% resguardada.</p>
+                    <h3 class="text-xl font-bold mb-3 text-[#4A4A4A]">Regla de 3 Strikes</h3>
+                    <p class="text-gray-500 text-sm">Tracker de compromiso. Tres inasistencias injustificadas generan el cierre ético del proceso, respetando tu tiempo.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="metodo" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-[#003366] rounded-3xl overflow-hidden shadow-xl">
-                <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <div class="p-12 lg:p-16 flex flex-col justify-center">
-                        <h2 class="text-3xl font-bold text-white mb-6">Integración con el Método HALCÓN</h2>
-                        <p class="text-blue-100 mb-6 leading-relaxed">
-                            CInformado no solo guarda datos, te guía en la estructuración de un propósito de vida para tus pacientes. Basado en principios de PNL y Psicología Existencial.
-                        </p>
-                        <ul class="space-y-4 text-blue-50">
-                            <li class="flex items-center gap-3">
-                                <span class="bg-blue-500/30 p-1 rounded-full"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
-                                <strong>H</strong>abilidades y Esencia
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <span class="bg-blue-500/30 p-1 rounded-full"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
-                                <strong>A</strong>spiración y Visión
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <span class="bg-blue-500/30 p-1 rounded-full"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
-                                <strong>L</strong>ógica y Coherencia
-                            </li>
-                            <li class="flex items-center gap-3 text-blue-300 italic">...y el ciclo constructivo completo.</li>
-                        </ul>
-                    </div>
-                    <div class="bg-[#001a33] p-12 lg:p-16 flex items-center justify-center">
-                        <!-- Workflow visualization -->
-                        <div class="w-full space-y-6">
-                            <div class="bg-white/10 backdrop-blur border border-white/20 p-4 rounded-xl flex items-center justify-between">
-                                <span class="text-white font-medium">1. Sesión Cero (Diagnóstico)</span>
-                                <span class="bg-white/20 px-3 py-1 rounded text-xs text-white">Documentado</span>
-                            </div>
-                            <div class="w-0.5 h-6 bg-white/20 mx-auto"></div>
-                            <div class="bg-white/10 backdrop-blur border border-white/20 p-4 rounded-xl flex items-center justify-between">
-                                <span class="text-white font-medium">2. Definición de Tareas</span>
-                                <span class="bg-emerald-500/80 px-3 py-1 rounded text-xs text-white">Firma QR Paciente</span>
-                            </div>
-                            <div class="w-0.5 h-6 bg-white/20 mx-auto"></div>
-                            <div class="bg-white/10 backdrop-blur border border-white/20 p-4 rounded-xl flex items-center justify-between">
-                                <span class="text-white font-medium">3. Ciclo de Reseñas Cerrado</span>
-                                <span class="bg-amber-500/80 px-3 py-1 rounded text-xs text-white">Moderación Admin</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="seguridad" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-12">La tecnología al servicio de tu tranquilidad legal</h2>
+    <section id="contacto" class="py-24 container mx-auto px-6">
+        <div class="max-w-4xl mx-auto rounded-3xl p-12 text-center bg-[#003366] shadow-2xl relative overflow-hidden">
+            <!-- Patrón de fondo sutil -->
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-6">
-                    <div class="text-[#003366] mb-4 flex justify-center">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
-                    </div>
-                    <h4 class="text-lg font-bold text-gray-900 mb-2">Respaldo Ético</h4>
-                    <p class="text-gray-600 text-sm">Aplicación estricta de las normativas de confidencialidad y trato de datos sensibles.</p>
-                </div>
-                <div class="p-6">
-                    <div class="text-[#003366] mb-4 flex justify-center">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    </div>
-                    <h4 class="text-lg font-bold text-gray-900 mb-2">Cero Repudio</h4>
-                    <p class="text-gray-600 text-sm">Metadatos del navegador y firmas estampadas aseguran que un consentimiento no pueda ser negado.</p>
-                </div>
-                <div class="p-6">
-                    <div class="text-[#003366] mb-4 flex justify-center">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                    </div>
-                    <h4 class="text-lg font-bold text-gray-900 mb-2">Moderación Inteligente</h4>
-                    <p class="text-gray-600 text-sm">Control absoluto sobre los testimonios y reseñas públicas para proteger tu prestigio profesional.</p>
-                </div>
+            <div class="relative z-10">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Profesionaliza tu Independencia</h2>
+                <p class="text-lg text-blue-100 mb-10 max-w-2xl mx-auto">Únete a la lista de espera exclusiva y obtén acceso anticipado a la plataforma que blindará tu consultorio.</p>
+                
+                <form class="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto">
+                    <input type="email" placeholder="Tu correo profesional" required class="px-6 py-4 rounded-full border-0 focus:outline-none focus:ring-4 focus:ring-blue-300 flex-1 text-[#4A4A4A] w-full shadow-inner">
+                    <button type="submit" class="bg-white text-[#003366] px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all duration-300 shrink-0 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Solicitar Acceso
+                    </button>
+                </form>
+                <p class="text-sm text-blue-200 mt-8 italic">"Que el cielo sea el límite, no tu mente."</p>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="py-20 bg-gray-50 border-t border-gray-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Eleva el estándar de tu práctica clínica</h2>
-            <p class="text-xl text-gray-600 mb-10">Gestiona mejor, factura claro, y protege tu licencia. Únete al ecosistema CInformado.</p>
-            <form class="max-w-md mx-auto space-y-4 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                <div>
-                    <label class="sr-only" for="email">Correo Electrónico</label>
-                    <input type="email" id="email" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#003366] focus:border-[#003366] outline-none transition-all" placeholder="Tu correo profesional" required>
-                </div>
-                <button type="submit" class="w-full bg-[#003366] hover:bg-[#004d99] text-white font-bold py-3 px-4 rounded-xl transition-colors shadow-md">
-                    Solicitar Acceso Anticipado
-                </button>
-                <p class="text-xs text-gray-500 mt-4">Al solicitar acceso aceptas nuestra política de tratamiento de datos acorde a la ley vigente.</p>
-            </form>
-        </div>
-    </section>
-
-    <footer class="bg-[#001a33] py-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center gap-2 mb-4 md:mb-0">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    <span class="font-bold text-xl text-white">CInformado</span>
-                </div>
-                <div class="text-gray-400 text-sm flex gap-6">
-                    <a href="#" class="hover:text-white transition-colors">Términos Legales</a>
-                    <a href="#" class="hover:text-white transition-colors">Privacidad</a>
-                    <a href="#" class="hover:text-white transition-colors">Soporte</a>
-                </div>
+    <footer class="bg-[#1a1a1a] text-white py-12 mt-12">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
+            <div>
+                <span class="font-bold text-xl text-white tracking-tight">CInformado</span>
+                <p class="text-gray-400 text-sm mt-2">Tecnología Clínica y Método HALCÓN.</p>
             </div>
-            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-                &copy; 2026 CInformado by Jorge Arango Castaño. Todos los derechos reservados. <br>
-                <span class="italic mt-2 inline-block">"Que el cielo sea el límite, no tu mente."</span>
+            <div class="text-gray-400 text-sm">
+                <p>&copy; 2026 Jorge Arango Castaño. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
+    <!-- LOGICA DEL CARRUSEL DE IMÁGENES -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // El mapa de tu territorio visual. Si agregas dash11.png, solo añádelo a esta lista.
+            const images = [
+                'dashboard/dash01.png',
+                'dashboard/dash02.png',
+                'dashboard/dash03.png',
+                'dashboard/dash04.png',
+                'dashboard/dash05.png',
+                'dashboard/dash06.png',
+                'dashboard/dash07.png',
+                'dashboard/dash08.png',
+                'dashboard/dash09.png',
+                'dashboard/dash10.png'
+            ];
+            
+            const imgElement = document.getElementById('dashboard-carousel');
+            let currentIndex = 0;
+
+            if(imgElement && images.length > 1) {
+                // Intervalo estricto de 4 segundos (4000ms)
+                setInterval(() => {
+                    // 1. Iniciamos el desvanecimiento (Fade Out)
+                    imgElement.classList.remove('opacity-100');
+                    imgElement.classList.add('opacity-0');
+
+                    // 2. Esperamos a que la CSS transition termine (700ms definidos en la clase duration-700)
+                    setTimeout(() => {
+                        // Cambiamos la fuente de la imagen
+                        currentIndex = (currentIndex + 1) % images.length;
+                        imgElement.src = images[currentIndex];
+                        
+                        // 3. Volvemos a mostrar la imagen (Fade In)
+                        imgElement.classList.remove('opacity-0');
+                        imgElement.classList.add('opacity-100');
+                    }, 700); 
+                    
+                }, 4000);
+            }
+        });
+    </script>
 </body>
 </html>
